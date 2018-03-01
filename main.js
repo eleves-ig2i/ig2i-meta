@@ -126,7 +126,7 @@ const main = async function() {
 		if (errorsCount) {
 			console.log(chalk.red(errorsCount + ' errors'));
 		}
-		readme += '\nTimestamp : ' + Date.now();
+		//readme += '\nTimestamp : ' + Date.now();
 		console.log('Readme');
 		const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
 		const {stdoutReadme2, stderrReadme2} = await exec('cat README.md');
