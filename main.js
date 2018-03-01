@@ -86,9 +86,10 @@ const main = async function() {
 		for(const k in repos) {
 			const repo = repos[k];
 			const repoUrl = repo.ssh_url;
+			const repoUrlHttps = repo.clone_url;
 			const name = getNameFromUrl(repo.ssh_url);
 			console.log('Cloning ' + name);
-			const {stdout, stderr} = await exec(`cd repos; git clone ${repoUrl}`);
+			const {stdout, stderr} = await exec(`cd repos; git clone ${repoUrlHttps}`);
 			console.log('Checking ' + name);
 			checkPrefix(repoUrl, name);
 			checkTravisExists(repoUrl, name);
