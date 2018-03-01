@@ -1,5 +1,5 @@
 # IG2I meta
->A repo to report everything
+A repo to report everything.
 ```
 R E P O R T
 E     P   R
