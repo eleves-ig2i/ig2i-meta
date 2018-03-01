@@ -103,6 +103,8 @@ const main = async function() {
 			const repoUrlHttps = repo.clone_url;
 			if(!url) {
 				console.log('no url for name');
+				console.log('statusCode', statusCode);
+				console.log('result', result);
 			} else {
 				const name = getNameFromUrl(url);
 				console.log('Cloning ' + name);
