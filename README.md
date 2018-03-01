@@ -16,4 +16,4 @@ ig2i-le4-webservice-2018-tp1-soap :
 ig2i-le4-webservice-2018-tp2-rest :
 - error	no-travis
 
-Timestamp : 1519926981289
+Timestamp : 1519927072052
