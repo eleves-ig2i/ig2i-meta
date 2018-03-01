@@ -5,7 +5,9 @@ script:
   - node main.js
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
+  - git status
   - git commit -am "Travis build ${TRAVIS_BUILD_NUMBER}"
+  - git status
   - git remote add tmp https://${GITHUB_TOKEN}@github.com/eleves-ig2i/ig2i-meta.git > /dev/null 2>&1
   - git push tmp master
 deploy:
