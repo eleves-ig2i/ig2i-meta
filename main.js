@@ -66,7 +66,7 @@ const checkUpperInRepoName = function(url, name) {
 	if(useUpper) {
 		addError(url, 'repo-name-uppercase');
 	}
-}
+};
 
 const addError = function(url, code) {
 	if(!report) {
