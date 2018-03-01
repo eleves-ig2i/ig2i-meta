@@ -102,15 +102,16 @@ const main = async function() {
 			const url = repo.ssh_url;
 			const repoUrlHttps = repo.clone_url;
 			if(!url) {
-				console.log('no url for l.97');
+				console.log('no url for name');
+			} else {
+				const name = getNameFromUrl(url);
+				console.log('Cloning ' + name);
+				const {stdout, stderr} = await exec(`cd repos; git clone ${repoUrlHttps}`);
+				console.log('Checking ' + name);
+				checkPrefix(url, name);
+				checkTravisExists(url, name);
+				checkUpperInRepoName(url, name);
 			}
-			const name = getNameFromUrl(url);
-			console.log('Cloning ' + name);
-			const {stdout, stderr} = await exec(`cd repos; git clone ${repoUrlHttps}`);
-			console.log('Checking ' + name);
-			checkPrefix(url, name);
-			checkTravisExists(url, name);
-			checkUpperInRepoName(url, name);
 		};
 		console.log('Cleaning');
 		const {stdout, stderr} = await exec('rm -rf repos');
@@ -121,7 +122,7 @@ const main = async function() {
 			readme += '\n';
 			const repo = report[k];
 			if(!repo.url) {
-				console.log('no url for l.115');
+				console.log('no url for name2');
 			}
 			const name2 = getNameFromUrl(repo.url);
 			console.log(name2);
