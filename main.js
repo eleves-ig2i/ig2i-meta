@@ -77,7 +77,10 @@ const addError = function(url, code) {
 
 const getNameFromUrl = function(url) {
 	if(!url) {
-		throw new Error('No url in getNameFromUrl()');
+		//throw new Error('No url in getNameFromUrl()');
+		//process.exit(1);
+		console.log(chalk.red('No url in getNameFromUrl()'));
+		return;
 	}
 	return url.replace(prefixe, '').replace(suffixe, '');
 };
@@ -88,14 +91,17 @@ const main = async function() {
 		let repos = result;
 		for(const k in repos) {
 			const repo = repos[k];
-			const repoUrl = repo.ssh_url;
+			const url = repo.ssh_url;
 			const repoUrlHttps = repo.clone_url;
-			const name = getNameFromUrl(repo.ssh_url);
+			if(!url) {
+				console.log('no url for l.97');
+			}
+			const name = getNameFromUrl(url);
 			console.log('Cloning ' + name);
 			const {stdout, stderr} = await exec(`cd repos; git clone ${repoUrlHttps}`);
 			console.log('Checking ' + name);
-			checkPrefix(repoUrl, name);
-			checkTravisExists(repoUrl, name);
+			checkPrefix(url, name);
+			checkTravisExists(url, name);
 		};
 		console.log('Cleaning');
 		const {stdout, stderr} = await exec('rm -rf repos');
@@ -105,8 +111,12 @@ const main = async function() {
 		for(const k in report) {
 			readme += '\n';
 			const repo = report[k];
-			console.log(getNameFromUrl(repo.url));
-			readme += `${getNameFromUrl(repo.url)} :\n`;
+			if(!repo.url) {
+				console.log('no url for l.115');
+			}
+			const name2 = getNameFromUrl(repo.url);
+			console.log(name2);
+			readme += `${name2} :\n`;
 			repo.errors.forEach(function(error) {
 				errorsCount++;
 				console.log(`\t${chalk.red('error')}\t${error.code}`);
