@@ -147,10 +147,10 @@ const main = async function() {
 		console.log(readme);
 		readme = readme.replace('${report}', readmeReport);
 		if(!fail) {
-			await fs.writeFile("README.md", readme, function(err) {
-					if(err) {
-						return console.log(err);
-					}
+			await fs.writeFile('README.md', readme, function(err) {
+				if(err) {
+					return console.log(err);
+				}
 			});
 		}
 		readme = fs.readFileSync('README.md', 'utf8');
