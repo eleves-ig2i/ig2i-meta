@@ -51,14 +51,14 @@ const checkPrefix = function(url, name) {
 	if(noIg2iPrefixe) {
 		addError(url, 'no-ig2i-prefix');
 	}
-}
+};
 
 const checkTravisExists = function(url, name) {
 	let noTravis = !fs.existsSync('repos/'+name+'/.travis.yml');
 	if(noTravis) {
 		addError(url, 'no-travis');
 	}
-}
+};
 
 const addError = function(url, code) {
 	if(!report) {
@@ -68,55 +68,62 @@ const addError = function(url, code) {
 		report[url] = {
 			url: url,
 			errors: []
-		}
+		};
 	}
 	report[url].errors.push({
 		code:code
 	});
-}
+};
 
 const getNameFromUrl = function(url) {
 	return url.replace(prefixe, '').replace(suffixe, '');
-}
+};
 
 const main = async function() {
-	const {stdout2, stderr2} = await exec(`mkdir repos;`);
+	const {stdout2, stderr2} = await exec('mkdir repos;');
 	getJSON(options, async function(statusCode, result) {
 		let repos = result;
 		for(const k in repos) {
 			const repo = repos[k];
 			const repoUrl = repo.ssh_url;
+			const repoUrlHttps = repo.clone_url;
 			const name = getNameFromUrl(repo.ssh_url);
 			console.log('Cloning ' + name);
-			const {stdout, stderr} = await exec(`cd repos; git clone ${repoUrl}`);
+			const {stdout, stderr} = await exec(`cd repos; git clone ${repoUrlHttps}`);
 			console.log('Checking ' + name);
 			checkPrefix(repoUrl, name);
 			checkTravisExists(repoUrl, name);
 		};
 		console.log('Cleaning');
-		const {stdout, stderr} = await exec(`rm -rf repos`);
-		console.log('Done');
+		const {stdout, stderr} = await exec('rm -rf repos');
 		console.log('Report');
 		let readme = '# Report\n';
 		let errorsCount = 0;
 		for(const k in report) {
+			readme += '\n';
 			const repo = report[k];
 			console.log(getNameFromUrl(repo.url));
-			readme += `## ${getNameFromUrl(repo.url)}\n`;
+			readme += `${getNameFromUrl(repo.url)} :\n`;
 			repo.errors.forEach(function(error) {
 				errorsCount++;
 				console.log(`\t${chalk.red('error')}\t${error.code}`);
-				readme += ("- error\t" + error.code + "\n");
+				readme += ('- error\t' + error.code + '\n');
 			});
 		};
 		if (errorsCount) {
 			console.log(chalk.red(errorsCount + ' errors'));
 		}
+		console.log('Readme');
 		const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
-		if (errorsCount) {
-			process.exit(1);
-		}
+		const {stdoutReadme2, stderrReadme2} = await exec('cat README.md');
+		var content = fs.readFileSync('README.md', 'utf8');
+		console.log(content);
+		console.log('Git');
+		const {stdoutGit2, stderrGit2} = await exec('git remote add tmp https://github.com/eleves-ig2i/ig2i-meta.git');
+		const {stdoutGit, stderrGit} = await exec('git commit -am "Update README.md"');
+		//const {stdoutGit3, stderrGit3} = await exec('git push tmp master');
+		console.log('Done');
 	});
-}
+};
 
 main();
