@@ -76,6 +76,9 @@ const addError = function(url, code) {
 };
 
 const getNameFromUrl = function(url) {
+	if(!url) {
+		throw new Error('No url in getNameFromUrl()');
+	}
 	return url.replace(prefixe, '').replace(suffixe, '');
 };
 
