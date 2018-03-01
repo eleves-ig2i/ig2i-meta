@@ -102,12 +102,13 @@ const main = async function() {
 		for(const k in report) {
 			const repo = report[k];
 			console.log(getNameFromUrl(repo.url));
-			readme += `## ${getNameFromUrl(repo.url)}\n`;
+			readme += `${getNameFromUrl(repo.url)} :\n`;
 			repo.errors.forEach(function(error) {
 				errorsCount++;
 				console.log(`\t${chalk.red('error')}\t${error.code}`);
 				readme += ("- error\t" + error.code + "\n");
 			});
+			readme += '\n';
 		};
 		if (errorsCount) {
 			console.log(chalk.red(errorsCount + ' errors'));
