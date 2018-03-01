@@ -144,9 +144,14 @@ const main = async function() {
 		}
 		console.log('Readme');
 		let readme = fs.readFileSync('README-template.md', 'utf8');
+		console.log(readme);
 		readme = readme.replace('${report}', readmeReport);
 		if(!fail) {
-			const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
+			await fs.writeFile("README.md", readme, function(err) {
+					if(err) {
+						return console.log(err);
+					}
+			});
 		}
 		readme = fs.readFileSync('README.md', 'utf8');
 		console.log(readme);
