@@ -123,9 +123,6 @@ const main = async function() {
 		const {stdoutGit, stderrGit} = await exec('git commit -am "Update README.md"');
 		//const {stdoutGit3, stderrGit3} = await exec('git push tmp master');
 		console.log('Done');
-		if (errorsCount) {
-			process.exit(1);
-		}
 	});
 };
 
