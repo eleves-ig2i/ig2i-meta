@@ -148,8 +148,7 @@ const main = async function() {
 		if(!fail) {
 			const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
 		}
-		const {stdoutReadme2, stderrReadme2} = await exec('cat README.md');
-		readme = fs.readFileSync('README-template.md', 'utf8');
+		readme = fs.readFileSync('README.md', 'utf8');
 		console.log(readme);
 		console.log('Done');
 	});
