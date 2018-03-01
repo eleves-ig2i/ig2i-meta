@@ -96,11 +96,11 @@ const main = async function() {
 		};
 		console.log('Cleaning');
 		const {stdout, stderr} = await exec('rm -rf repos');
-		console.log('Done');
 		console.log('Report');
 		let readme = '# Report\n';
 		let errorsCount = 0;
 		for(const k in report) {
+			readme += '\n';
 			const repo = report[k];
 			console.log(getNameFromUrl(repo.url));
 			readme += `${getNameFromUrl(repo.url)} :\n`;
@@ -109,12 +109,16 @@ const main = async function() {
 				console.log(`\t${chalk.red('error')}\t${error.code}`);
 				readme += ('- error\t' + error.code + '\n');
 			});
-			readme += '\n';
 		};
 		if (errorsCount) {
 			console.log(chalk.red(errorsCount + ' errors'));
 		}
+		console.log('Readme');
 		const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
+		const {stdoutReadme2, stderrReadme2} = await exec('cat README.md');
+		var content = fs.readFileSync('README.md', 'utf8');
+		console.log(content);
+		console.log('Done');
 		if (errorsCount) {
 			process.exit(1);
 		}
