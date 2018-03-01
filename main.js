@@ -118,31 +118,32 @@ const main = async function() {
 		console.log('Cleaning');
 		const {stdout, stderr} = await exec('rm -rf repos');
 		console.log('Report');
-		let readme = '# Report\n';
+		let readmeReport = '';
 		let errorsCount = 0;
 		for(const k in report) {
-			readme += '\n';
+			readmeReport += '\n';
 			const repo = report[k];
 			if(!repo.url) {
 				console.log('no url for name2');
 			}
 			const name2 = getNameFromUrl(repo.url);
 			console.log(name2);
-			readme += `${name2} :\n`;
+			readmeReport += `${name2} :\n`;
 			repo.errors.forEach(function(error) {
 				errorsCount++;
 				console.log(`\t${chalk.red('error')}\t${error.code}`);
-				readme += ('- error\t' + error.code + '\n');
+				readmeReport += ('- error\t' + error.code + '\n');
 			});
 		};
 		if (errorsCount) {
 			console.log(chalk.red(errorsCount + ' errors'));
 		}
 		console.log('Readme');
+		let readme = fs.readFileSync('README-template.md', 'utf8');
+		readme = readme.replace('${report}', readmeReport);
 		const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
 		const {stdoutReadme2, stderrReadme2} = await exec('cat README.md');
-		var content = fs.readFileSync('README.md', 'utf8');
-		console.log(content);
+		console.log(readme);
 		console.log('Done');
 	});
 };
