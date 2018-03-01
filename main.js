@@ -51,14 +51,14 @@ const checkPrefix = function(url, name) {
 	if(noIg2iPrefixe) {
 		addError(url, 'no-ig2i-prefix');
 	}
-}
+};
 
 const checkTravisExists = function(url, name) {
 	let noTravis = !fs.existsSync('repos/'+name+'/.travis.yml');
 	if(noTravis) {
 		addError(url, 'no-travis');
 	}
-}
+};
 
 const addError = function(url, code) {
 	if(!report) {
@@ -68,19 +68,19 @@ const addError = function(url, code) {
 		report[url] = {
 			url: url,
 			errors: []
-		}
+		};
 	}
 	report[url].errors.push({
 		code:code
 	});
-}
+};
 
 const getNameFromUrl = function(url) {
 	return url.replace(prefixe, '').replace(suffixe, '');
-}
+};
 
 const main = async function() {
-	const {stdout2, stderr2} = await exec(`mkdir repos;`);
+	const {stdout2, stderr2} = await exec('mkdir repos;');
 	getJSON(options, async function(statusCode, result) {
 		let repos = result;
 		for(const k in repos) {
@@ -94,7 +94,7 @@ const main = async function() {
 			checkTravisExists(repoUrl, name);
 		};
 		console.log('Cleaning');
-		const {stdout, stderr} = await exec(`rm -rf repos`);
+		const {stdout, stderr} = await exec('rm -rf repos');
 		console.log('Done');
 		console.log('Report');
 		let readme = '# Report\n';
@@ -106,7 +106,7 @@ const main = async function() {
 			repo.errors.forEach(function(error) {
 				errorsCount++;
 				console.log(`\t${chalk.red('error')}\t${error.code}`);
-				readme += ("- error\t" + error.code + "\n");
+				readme += ('- error\t' + error.code + '\n');
 			});
 			readme += '\n';
 		};
@@ -118,6 +118,6 @@ const main = async function() {
 			process.exit(1);
 		}
 	});
-}
+};
 
 main();
