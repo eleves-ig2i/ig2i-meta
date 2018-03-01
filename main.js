@@ -113,14 +113,15 @@ const main = async function() {
 		if (errorsCount) {
 			console.log(chalk.red(errorsCount + ' errors'));
 		}
+		readme += 'Timestamp : ' + Date.now();
 		console.log('Readme');
 		const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
 		const {stdoutReadme2, stderrReadme2} = await exec('cat README.md');
 		var content = fs.readFileSync('README.md', 'utf8');
 		console.log(content);
 		console.log('Git');
-		const {stdoutGit2, stderrGit2} = await exec('git remote add tmp https://github.com/eleves-ig2i/ig2i-meta.git');
-		const {stdoutGit, stderrGit} = await exec('git commit -am "Update README.md"');
+		//const {stdoutGit2, stderrGit2} = await exec('git remote add tmp https://github.com/eleves-ig2i/ig2i-meta.git');
+		//const {stdoutGit, stderrGit} = await exec('git commit -am "Update README.md"');
 		//const {stdoutGit3, stderrGit3} = await exec('git push tmp master');
 		console.log('Done');
 	});

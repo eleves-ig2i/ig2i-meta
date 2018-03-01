@@ -7,10 +7,6 @@ script:
   - git config --global user.name "Travis CI"
   - git diff
   - git commit -am "Travis build ${TRAVIS_BUILD_NUMBER}"
-  - printf ${TRAVIS_BUILD_NUMBER}
-  - printf $TRAVIS_BUILD_NUMBER
-  - printf $test
-  - printf $testko
   - git remote add tmp https://${GITHUB_TOKEN}@github.com/eleves-ig2i/ig2i-meta.git > /dev/null 2>&1
   - git push tmp master
 deploy:
