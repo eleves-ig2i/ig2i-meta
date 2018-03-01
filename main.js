@@ -120,7 +120,7 @@ const main = async function() {
 		console.log(content);
 		const {stdoutGit2, stderrGit2} = await exec('git remote add tmp https://github.com/eleves-ig2i/ig2i-meta.git');
 		const {stdoutGit, stderrGit} = await exec('git commit -am "Update README.md"');
-		const {stdoutGit3, stderrGit3} = await exec('git push tmp master');
+		//const {stdoutGit3, stderrGit3} = await exec('git push tmp master');
 		console.log('Done');
 		if (errorsCount) {
 			process.exit(1);
