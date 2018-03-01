@@ -94,8 +94,12 @@ const getNameFromUrl = function(url) {
 };
 
 const main = async function() {
+	let fail = false;
 	const {stdout2, stderr2} = await exec('mkdir repos;');
 	getJSON(options, async function(statusCode, result) {
+		if (statusCode === 403) {
+			fail = true;
+		}
 		let repos = result;
 		for(const k in repos) {
 			const repo = repos[k];
@@ -141,7 +145,9 @@ const main = async function() {
 		console.log('Readme');
 		let readme = fs.readFileSync('README-template.md', 'utf8');
 		readme = readme.replace('${report}', readmeReport);
-		const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
+		if(!fail) {
+			const {stdoutReadme, stderrReadme} = await exec(`printf "${readme}" > README.md`);
+		}
 		const {stdoutReadme2, stderrReadme2} = await exec('cat README.md');
 		console.log(readme);
 		console.log('Done');
