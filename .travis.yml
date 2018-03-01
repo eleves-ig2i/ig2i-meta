@@ -3,6 +3,11 @@ script:
   - printf "module.exports={ignore:['node_modules','package-lock.json','.git','.travis.yml'],verbose:true};" > .linteverythingrc.js
   - node ./node_modules/linteverything/bin/linteverything.js
   - node main.js
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
+  - git commit -am "Travis build: $TRAVIS_BUILD_NUMBER"
+  - git remote add tmp https://${GITHUB_TOKEN}@github.com/eleves-ig2i/ig2i-meta.git > /dev/null 2>&1
+  - git push tmp master
 deploy:
   provider: pages
   skip-cleanup: true
