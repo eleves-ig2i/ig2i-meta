@@ -60,6 +60,14 @@ const checkTravisExists = function(url, name) {
 	}
 };
 
+const checkUpperInRepoName = function(url, name) {
+	let regex = /[A-Z]/g;
+	let useUpper = regex.exec(name);
+	if(useUpper) {
+		addError(url, 'repo-name-uppercase');
+	}
+}
+
 const addError = function(url, code) {
 	if(!report) {
 		report = {};
@@ -102,6 +110,7 @@ const main = async function() {
 			console.log('Checking ' + name);
 			checkPrefix(url, name);
 			checkTravisExists(url, name);
+			checkUpperInRepoName(url, name);
 		};
 		console.log('Cleaning');
 		const {stdout, stderr} = await exec('rm -rf repos');
