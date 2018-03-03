@@ -97,9 +97,7 @@ const main = async function() {
 	let failLoadingRepoList = false;
 	const {stdout2, stderr2} = await exec('mkdir repos;');
 	getJSON(options, async function(statusCode, result) {
-		if (statusCode === 403) {
-			//result = fs.readFileSync('repos.json', 'utf8');
-		} else {
+		if (statusCode !== 403) {
 			fs.writeFileSync('repos.json', JSON.stringify(result));
 		}
 		let repos = JSON.parse(fs.readFileSync('repos.json', 'utf8'));
