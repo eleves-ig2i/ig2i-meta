@@ -37,6 +37,9 @@ ig2i-le3-poo-2017-ctp2 :
 ig2i-le3-poo-2018-ctp1 :
 - error	no-travis
 
+ig2i-le3-prs-2018-ctp1 :
+- error	no-travis
+
 ig2i-le4-webservice-2018-tp1-soap :
 - error	no-travis
 

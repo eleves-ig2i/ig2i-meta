@@ -94,13 +94,15 @@ const getNameFromUrl = function(url) {
 };
 
 const main = async function() {
-	let fail = false;
+	let failLoadingRepoList = false;
 	const {stdout2, stderr2} = await exec('mkdir repos;');
 	getJSON(options, async function(statusCode, result) {
 		if (statusCode === 403) {
-			fail = true;
+			//result = fs.readFileSync('repos.json', 'utf8');
+		} else {
+			fs.writeFileSync('repos.json', JSON.stringify(result));
 		}
-		let repos = result;
+		let repos = JSON.parse(fs.readFileSync('repos.json', 'utf8'));
 		for(const k in repos) {
 			const repo = repos[k];
 			const url = repo.ssh_url;
@@ -145,12 +147,8 @@ const main = async function() {
 		console.log('Readme');
 		let readme = fs.readFileSync('README-template.md', 'utf8');
 		readme = readme.replace('${report}', readmeReport);
-		if(!fail) {
-			await fs.writeFile('README.md', readme, function(err) {
-				if(err) {
-					return console.log(err);
-				}
-			});
+		if(!failLoadingRepoList) {
+			fs.writeFileSync('README.md', readme);
 		}
 		readme = fs.readFileSync('README.md', 'utf8');
 		console.log(readme);
