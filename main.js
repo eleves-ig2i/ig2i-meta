@@ -97,8 +97,15 @@ const main = async function() {
 	let failLoadingRepoList = false;
 	const {stdout2, stderr2} = await exec('mkdir repos;');
 	getJSON(options, async function(statusCode, result) {
+		let fileResult = [];
 		if (statusCode !== 403) {
-			fs.writeFileSync('repos.json', JSON.stringify(result));
+			for(const k in result) {
+				fileResult.push({
+					ssh_url: result[k].ssh_url,
+					clone_url: result[k].clone_url
+				});
+			}
+			fs.writeFileSync('repos.json', JSON.stringify(fileResult));
 		}
 		let repos = JSON.parse(fs.readFileSync('repos.json', 'utf8'));
 		for(const k in repos) {
