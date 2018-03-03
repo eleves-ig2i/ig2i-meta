@@ -10,7 +10,7 @@ T R O P E R
 ```
 ## How it works
 The workflow for this project is quite simple :
-- a Travis CI job runs everyday ;
+- a Travis CI job runs daily ;
 - this job gets le list of all the repos of the organisation with a call to https://api.github.com/users/eleves-ig2i/repos ;
 - for each repo rules are checked ;
 - a report is generated ;
