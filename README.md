@@ -24,9 +24,8 @@ eleves-ig2i.org :
 ig2i-guidelines :
 - error	no-travis
 
-ig2i-LE1-2018-WEB1-TP1 :
+ig2i-le1-web-2018-tp1 :
 - error	no-travis
-- error	repo-name-uppercase
 
 ig2i-le3-poo-2016-ctp1 :
 - error	no-travis
@@ -47,5 +46,11 @@ ig2i-le4-webservice-2018-tp1-soap :
 - error	no-travis
 
 ig2i-le4-webservice-2018-tp2-rest :
+- error	no-travis
+
+ig2i-ri-2016 :
+- error	no-travis
+
+ig2i-ri-2018 :
 - error	no-travis
 
