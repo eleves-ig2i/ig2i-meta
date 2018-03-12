@@ -42,7 +42,7 @@ ig2i-le3-prs-2018-ctp1 :
 ig2i-le4-prp-2018-schneider :
 - error	no-travis
 
-ig2i-le4-prp-2018-schneider-2 :
+ig2i-le4-prp-2018-schneider-old :
 - error	no-travis
 
 ig2i-le4-webservice-2018-tp1-soap :
