@@ -39,7 +39,7 @@ ig2i-le3-poo-2018-ctp1 :
 ig2i-le3-prs-2018-ctp1 :
 - error	no-travis
 
-ig2i-le4-prp-2018-schneider :
+ig2i-le4-prp-2018-dataflow :
 - error	no-travis
 
 ig2i-le4-prp-2018-schneider-old :
