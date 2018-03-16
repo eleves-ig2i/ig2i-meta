@@ -105,7 +105,7 @@ const main = async function() {
 					clone_url: result[k].clone_url
 				});
 			}
-			fs.writeFileSync('repos.json', JSON.stringify(fileResult));
+			fs.writeFileSync('repos.json', JSON.stringify(fileResult, null, 2));
 		}
 		let repos = JSON.parse(fs.readFileSync('repos.json', 'utf8'));
 		for(const k in repos) {
