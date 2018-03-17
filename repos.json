@@ -48,6 +48,10 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp3.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp3-correction.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp3-correction.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp4.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp4.git"
   },
