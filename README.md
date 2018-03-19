@@ -21,9 +21,6 @@ The workflow for this project is quite simple :
 eleves-ig2i.org :
 - error	no-ig2i-prefix
 
-ig2i-guidelines :
-- error	no-travis
-
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
