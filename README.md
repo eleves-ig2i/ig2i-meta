@@ -21,6 +21,12 @@ The workflow for this project is quite simple :
 eleves-ig2i.org :
 - error	no-ig2i-prefix
 
+ig2i-le1-sda1-2018-tp3 :
+- error	no-travis
+
+ig2i-le1-sda1-2018-tp4 :
+- error	no-travis
+
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
@@ -46,6 +52,9 @@ ig2i-le4-webservice-2018-tp1-soap :
 - error	no-travis
 
 ig2i-le4-webservice-2018-tp2-rest :
+- error	no-travis
+
+ig2i-le4-wma-2018-tp1 :
 - error	no-travis
 
 ig2i-ri-2016 :
