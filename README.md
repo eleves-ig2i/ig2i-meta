@@ -27,6 +27,9 @@ ig2i-le1-sda1-2018-tp3 :
 ig2i-le1-sda1-2018-tp4 :
 - error	no-travis
 
+ig2i-le1-sda1-2018-tp5 :
+- error	no-travis
+
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
@@ -40,6 +43,9 @@ ig2i-le3-poo-2018-ctp1 :
 - error	no-travis
 
 ig2i-le3-prs-2018-ctp1 :
+- error	no-travis
+
+ig2i-le4-dwm-2018-tp-symfony :
 - error	no-travis
 
 ig2i-le4-prp-2018-dataflow :
