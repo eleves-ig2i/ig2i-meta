@@ -63,6 +63,9 @@ ig2i-le4-webservice-2018-tp2-rest :
 ig2i-le4-wma-2018-tp1 :
 - error	no-travis
 
+ig2i-menus :
+- error	no-travis
+
 ig2i-ri-2016 :
 - error	no-travis
 

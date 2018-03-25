@@ -92,6 +92,10 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-wma-2018-tp1.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-menus.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-menus.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-meta.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-meta.git"
   },
