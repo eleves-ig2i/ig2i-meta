@@ -48,6 +48,9 @@ ig2i-le3-prs-2018-ctp1 :
 ig2i-le4-dwm-2018-tp-symfony :
 - error	no-travis
 
+ig2i-le4-ii-2017-train_controller :
+- error	no-travis
+
 ig2i-le4-prp-2018-dataflow :
 - error	no-travis
 
