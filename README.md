@@ -54,9 +54,6 @@ ig2i-le4-ii-2017-train_controller :
 ig2i-le4-prp-2018-dataflow :
 - error	no-travis
 
-ig2i-le4-prp-2018-schneider-old :
-- error	no-travis
-
 ig2i-le4-webservice-2018-tp1-soap :
 - error	no-travis
 
