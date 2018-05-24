@@ -69,6 +69,3 @@ ig2i-le4-wma-2018-tp1 :
 ig2i-menus :
 - error	no-travis
 
-ig2i-ri-2016 :
-- error	no-travis
-

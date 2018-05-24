@@ -52,6 +52,10 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-ii-2017-train_controller.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-projet-poower-rangers.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-projet-poower-rangers.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp1.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp1.git"
   },
@@ -114,9 +118,5 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-meta.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-meta.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-ri-2016.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-ri-2016.git"
   }
 ]
