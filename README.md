@@ -36,6 +36,9 @@ ig2i-le1-sda1-2018-tp6 :
 ig2i-le1-sda1-2018-tp7 :
 - error	no-travis
 
+ig2i-le1-sda1-2018-tp8 :
+- error	no-travis
+
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
@@ -70,8 +73,5 @@ ig2i-le4-webservice-2018-tp1-soap :
 - error	no-travis
 
 ig2i-le4-webservice-2018-tp2-rest :
-- error	no-travis
-
-ig2i-le4-wma-2018-tp1 :
 - error	no-travis
 

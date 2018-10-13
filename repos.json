@@ -24,6 +24,10 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le1-sda1-2018-tp7.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le1-sda1-2018-tp8.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le1-sda1-2018-tp8.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le1-web-2018-tp1.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le1-web-2018-tp1.git"
   },
@@ -114,9 +118,5 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-webservice-2018-tp2-rest.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-webservice-2018-tp2-rest.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-wma-2018-tp1.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-wma-2018-tp1.git"
   }
 ]
