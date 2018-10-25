@@ -42,6 +42,15 @@ ig2i-le1-sda1-2018-tp8 :
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
+ig2i-le2-sda2-2019-tp1 :
+- error	no-travis
+
+ig2i-le2-sda2-2019-tp2 :
+- error	no-travis
+
+ig2i-le2-sda2-2019-tp3 :
+- error	no-travis
+
 ig2i-le3-poo-2016-ctp1 :
 - error	no-travis
 
@@ -64,14 +73,5 @@ ig2i-le4-prp-2018-dataflow :
 - error	no-travis
 
 ig2i-le4-prp-2018-iotea :
-- error	no-travis
-
-ig2i-le4-prp-2018-screenless :
-- error	no-travis
-
-ig2i-le4-webservice-2018-tp1-soap :
-- error	no-travis
-
-ig2i-le4-webservice-2018-tp2-rest :
 - error	no-travis
 

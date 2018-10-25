@@ -32,6 +32,18 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le1-web-2018-tp1.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp1.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp1.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp2.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp2.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp3.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp3.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le3-poo-2016-ctp1.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le3-poo-2016-ctp1.git"
   },
@@ -106,17 +118,5 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-prp-2018-iotea.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-prp-2018-iotea.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-prp-2018-screenless.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-prp-2018-screenless.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-webservice-2018-tp1-soap.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-webservice-2018-tp1-soap.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-webservice-2018-tp2-rest.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-webservice-2018-tp2-rest.git"
   }
 ]
