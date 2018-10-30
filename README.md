@@ -42,6 +42,9 @@ ig2i-le1-sda1-2018-tp8 :
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
+ig2i-le2-sda2-2014-ctp :
+- error	no-travis
+
 ig2i-le2-sda2-2019-tp1 :
 - error	no-travis
 
@@ -70,8 +73,5 @@ ig2i-le4-ii-2017-train_controller :
 - error	no-travis
 
 ig2i-le4-prp-2018-dataflow :
-- error	no-travis
-
-ig2i-le4-prp-2018-iotea :
 - error	no-travis
 
