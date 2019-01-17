@@ -45,6 +45,9 @@ ig2i-le1-web-2018-tp1 :
 ig2i-le2-sda2-2014-ctp :
 - error	no-travis
 
+ig2i-le2-sda2-2019-ctp :
+- error	no-travis
+
 ig2i-le2-sda2-2019-tp1 :
 - error	no-travis
 
@@ -52,6 +55,15 @@ ig2i-le2-sda2-2019-tp2 :
 - error	no-travis
 
 ig2i-le2-sda2-2019-tp3 :
+- error	no-travis
+
+ig2i-le2-sda2-2019-tp4 :
+- error	no-travis
+
+ig2i-le2-sda2-2019-tp5 :
+- error	no-travis
+
+ig2i-le2-sda2-2019-tp6 :
 - error	no-travis
 
 ig2i-le3-poo-2016-ctp1 :
@@ -70,8 +82,5 @@ ig2i-le4-dwm-2018-tp-symfony :
 - error	no-travis
 
 ig2i-le4-ii-2017-train_controller :
-- error	no-travis
-
-ig2i-le4-prp-2018-dataflow :
 - error	no-travis
 
