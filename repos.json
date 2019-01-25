@@ -32,6 +32,14 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le1-web-2018-tp1.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2019-masquesConfettis.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2019-masquesConfettis.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-Livraison.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-Livraison.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2014-ctp.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2014-ctp.git"
   },
@@ -62,6 +70,14 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp6.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp6.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp7.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp7.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-web2-2019-prepaCTP.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-web2-2019-prepaCTP.git"
   },
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le3-poo-2016-ctp1.git",
@@ -102,21 +118,5 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp1.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp1.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp2.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp2.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp3.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp3.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp3-correction.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp3-correction.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp4.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp4.git"
   }
 ]

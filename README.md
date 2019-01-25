@@ -42,6 +42,14 @@ ig2i-le1-sda1-2018-tp8 :
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
+ig2i-le2-poo2-2019-masquesConfettis :
+- error	no-travis
+- error	repo-name-uppercase
+
+ig2i-le2-poo2-Livraison :
+- error	no-travis
+- error	repo-name-uppercase
+
 ig2i-le2-sda2-2014-ctp :
 - error	no-travis
 
@@ -65,6 +73,13 @@ ig2i-le2-sda2-2019-tp5 :
 
 ig2i-le2-sda2-2019-tp6 :
 - error	no-travis
+
+ig2i-le2-sda2-2019-tp7 :
+- error	no-travis
+
+ig2i-le2-web2-2019-prepaCTP :
+- error	no-travis
+- error	repo-name-uppercase
 
 ig2i-le3-poo-2016-ctp1 :
 - error	no-travis
