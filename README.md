@@ -42,11 +42,29 @@ ig2i-le1-sda1-2018-tp8 :
 ig2i-le1-web-2018-tp1 :
 - error	no-travis
 
+ig2i-le2-csi2-2019-tp1 :
+- error	no-travis
+
+ig2i-le2-csi2-2019-tp3 :
+- error	no-travis
+
+ig2i-le2-poo2-2019-Chargement :
+- error	no-travis
+- error	repo-name-uppercase
+
+ig2i-le2-poo2-2019-Formule1 :
+- error	no-travis
+- error	repo-name-uppercase
+
+ig2i-le2-poo2-2019-Livraison :
+- error	no-travis
+- error	repo-name-uppercase
+
 ig2i-le2-poo2-2019-masquesConfettis :
 - error	no-travis
 - error	repo-name-uppercase
 
-ig2i-le2-poo2-Livraison :
+ig2i-le2-poo2-2019-Paint :
 - error	no-travis
 - error	repo-name-uppercase
 
@@ -88,14 +106,5 @@ ig2i-le3-poo-2017-ctp2 :
 - error	no-travis
 
 ig2i-le3-poo-2018-ctp1 :
-- error	no-travis
-
-ig2i-le3-prs-2018-ctp1 :
-- error	no-travis
-
-ig2i-le4-dwm-2018-tp-symfony :
-- error	no-travis
-
-ig2i-le4-ii-2017-train_controller :
 - error	no-travis
 

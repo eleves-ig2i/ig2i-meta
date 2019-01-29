@@ -32,12 +32,32 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le1-web-2018-tp1.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-csi2-2019-tp1.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-csi2-2019-tp1.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-csi2-2019-tp3.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-csi2-2019-tp3.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2019-Chargement.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2019-Chargement.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2019-Formule1.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2019-Formule1.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2019-Livraison.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2019-Livraison.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2019-masquesConfettis.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2019-masquesConfettis.git"
   },
   {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-Livraison.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-Livraison.git"
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2019-Paint.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2019-Paint.git"
   },
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2014-ctp.git",
@@ -98,25 +118,5 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le3-prs-2017-ctp1.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le3-prs-2017-ctp1.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le3-prs-2018-ctp1.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le3-prs-2018-ctp1.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-dwm-2018-tp-symfony.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-dwm-2018-tp-symfony.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-ii-2017-train_controller.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-ii-2017-train_controller.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-projet-poower-rangers.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-projet-poower-rangers.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le4-poo-2018-tp1.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le4-poo-2018-tp1.git"
   }
 ]
