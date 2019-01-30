@@ -40,6 +40,14 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-csi2-2019-tp3.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2016-ctp2.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2016-ctp2.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2018-ctp.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2018-ctp.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-poo2-2019-Chargement.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-poo2-2019-Chargement.git"
   },
@@ -110,13 +118,5 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le3-poo-2017-ctp2.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le3-poo-2017-ctp2.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le3-poo-2018-ctp1.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le3-poo-2018-ctp1.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le3-prs-2017-ctp1.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le3-prs-2017-ctp1.git"
   }
 ]
