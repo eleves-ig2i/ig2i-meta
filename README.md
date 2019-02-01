@@ -51,12 +51,15 @@ ig2i-le2-csi2-2019-tp3 :
 ig2i-le2-poo2-2016-ctp2 :
 - error	no-travis
 
-ig2i-le2-poo2-2018-ctp :
+ig2i-le2-poo2-2018-ctp1 :
 - error	no-travis
 
 ig2i-le2-poo2-2019-Chargement :
 - error	no-travis
 - error	repo-name-uppercase
+
+ig2i-le2-poo2-2019-ctp1 :
+- error	no-travis
 
 ig2i-le2-poo2-2019-Formule1 :
 - error	no-travis
@@ -106,8 +109,5 @@ ig2i-le2-web2-2019-prepaCTP :
 - error	repo-name-uppercase
 
 ig2i-le3-poo-2016-ctp1 :
-- error	no-travis
-
-ig2i-le3-poo-2017-ctp2 :
 - error	no-travis
 
