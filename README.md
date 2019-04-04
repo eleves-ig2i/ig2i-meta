@@ -108,6 +108,9 @@ ig2i-le2-web2-2019-prepaCTP :
 - error	no-travis
 - error	repo-name-uppercase
 
-ig2i-le3-poo-2016-ctp1 :
+ig2i-le2-web2-ctp2019 :
+- error	no-travis
+
+ig2i-le2-web2-dm1 :
 - error	no-travis
 
