@@ -108,15 +108,15 @@
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp7.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-uod2-2019-ctp1.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-uod2-2019-ctp1.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-web2-2019-prepaCTP.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-web2-2019-prepaCTP.git"
   },
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-web2-ctp2019.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-web2-ctp2019.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-web2-dm1.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-web2-dm1.git"
   }
 ]
