@@ -21,6 +21,12 @@ The workflow for this project is quite simple :
 eleves-ig2i.org :
 - error	no-ig2i-prefix
 
+ig2i-la1-prs-2020-tp1 :
+- error	no-travis
+
+ig2i-la1-prs-2020-tp2 :
+- error	no-travis
+
 ig2i-le1-sda1-2018-tp3 :
 - error	no-travis
 
@@ -105,12 +111,5 @@ ig2i-le2-sda2-2019-tp7 :
 - error	no-travis
 
 ig2i-le2-uod2-2019-ctp1 :
-- error	no-travis
-
-ig2i-le2-web2-2019-prepaCTP :
-- error	no-travis
-- error	repo-name-uppercase
-
-ig2i-le2-web2-ctp2019 :
 - error	no-travis
 
