@@ -27,6 +27,15 @@ ig2i-la1-prs-2020-tp1 :
 ig2i-la1-prs-2020-tp2 :
 - error	no-travis
 
+ig2i-la1-prs-2020-tp3 :
+- error	no-travis
+
+ig2i-la1-prs-2020-tp4 :
+- error	no-travis
+
+ig2i-la1-prs-2020-tp5 :
+- error	no-travis
+
 ig2i-le1-sda1-2018-tp3 :
 - error	no-travis
 
@@ -102,14 +111,5 @@ ig2i-le2-sda2-2019-tp4 :
 - error	no-travis
 
 ig2i-le2-sda2-2019-tp5 :
-- error	no-travis
-
-ig2i-le2-sda2-2019-tp6 :
-- error	no-travis
-
-ig2i-le2-sda2-2019-tp7 :
-- error	no-travis
-
-ig2i-le2-uod2-2019-ctp1 :
 - error	no-travis
 
