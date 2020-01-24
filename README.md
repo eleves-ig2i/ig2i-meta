@@ -21,6 +21,15 @@ The workflow for this project is quite simple :
 eleves-ig2i.org :
 - error	no-ig2i-prefix
 
+ig2i-jpo-2020-cmj :
+- error	no-travis
+
+ig2i-jpo-2020-mpm :
+- error	no-travis
+
+ig2i-jpo-2020-prs :
+- error	no-travis
+
 ig2i-la1-poo3-tp1 :
 - error	no-travis
 
@@ -102,14 +111,5 @@ ig2i-le2-sda2-2019-ctp :
 - error	no-travis
 
 ig2i-le2-sda2-2019-tp1 :
-- error	no-travis
-
-ig2i-le2-sda2-2019-tp2 :
-- error	no-travis
-
-ig2i-le2-sda2-2019-tp3 :
-- error	no-travis
-
-ig2i-le2-sda2-2019-tp4 :
 - error	no-travis
 

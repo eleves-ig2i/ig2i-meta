@@ -4,6 +4,18 @@
     "clone_url": "https://github.com/eleves-ig2i/eleves-ig2i.org.git"
   },
   {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-jpo-2020-cmj.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-jpo-2020-cmj.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-jpo-2020-mpm.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-jpo-2020-mpm.git"
+  },
+  {
+    "ssh_url": "git@github.com:eleves-ig2i/ig2i-jpo-2020-prs.git",
+    "clone_url": "https://github.com/eleves-ig2i/ig2i-jpo-2020-prs.git"
+  },
+  {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-la1-poo3-tp1.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-la1-poo3-tp1.git"
   },
@@ -106,17 +118,5 @@
   {
     "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp1.git",
     "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp1.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp2.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp2.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp3.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp3.git"
-  },
-  {
-    "ssh_url": "git@github.com:eleves-ig2i/ig2i-le2-sda2-2019-tp4.git",
-    "clone_url": "https://github.com/eleves-ig2i/ig2i-le2-sda2-2019-tp4.git"
   }
 ]
