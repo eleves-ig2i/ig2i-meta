@@ -27,6 +27,9 @@ ig2i-jpo-2020-cmj :
 ig2i-jpo-2020-mpm :
 - error	no-travis
 
+ig2i-jpo-2020-poo-l3 :
+- error	no-travis
+
 ig2i-jpo-2020-prs :
 - error	no-travis
 
@@ -108,8 +111,5 @@ ig2i-le2-sda2-2014-ctp :
 - error	no-travis
 
 ig2i-le2-sda2-2019-ctp :
-- error	no-travis
-
-ig2i-le2-sda2-2019-tp1 :
 - error	no-travis
 
