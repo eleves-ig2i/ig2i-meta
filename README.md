@@ -33,6 +33,9 @@ ig2i-jpo-2020-poo-l3 :
 ig2i-jpo-2020-prs :
 - error	no-travis
 
+ig2i-l3-lpe-ds :
+- error	no-travis
+
 ig2i-la1-poo3-tp1 :
 - error	no-travis
 
@@ -108,8 +111,5 @@ ig2i-le2-poo2-2019-Paint :
 - error	repo-name-uppercase
 
 ig2i-le2-sda2-2014-ctp :
-- error	no-travis
-
-ig2i-le2-sda2-2019-ctp :
 - error	no-travis
 
