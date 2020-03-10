@@ -36,6 +36,9 @@ ig2i-jpo-2020-prs :
 ig2i-l3-lpe-ds :
 - error	no-travis
 
+ig2i-la1-2020-lpe-cr :
+- error	no-travis
+
 ig2i-la1-poo3-tp1 :
 - error	no-travis
 
@@ -109,7 +112,4 @@ ig2i-le2-poo2-2019-masquesConfettis :
 ig2i-le2-poo2-2019-Paint :
 - error	no-travis
 - error	repo-name-uppercase
-
-ig2i-le2-sda2-2014-ctp :
-- error	no-travis
 
